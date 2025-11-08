@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modal + Dark Mode (Homework)</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+    <!-- Theme toggle (CSS-only) -->
+    <input type="checkbox" id="theme-toggle" class="visually-hidden">
+    <label for="theme-toggle" class="switch" aria-label="Toggle dark mode">
+        <span class="switch-slider" aria-hidden="true"></span>
+        <span class="switch-text">Dark mode</span>
+    </label>
+
+    <div class="app">
+        <main class="container">
+            <h1>Modal + Dark Mode</h1>
+            <p>Click the switch to toggle theme. Open the modal below.</p>
+
+            <a class="btn" href="#modal">Open modal</a>
+        </main>
+    </div>
+
+    <!-- Modal (CSS-only via :target) -->
+    <div id="modal" class="modal" aria-labelledby="modal-title" role="dialog" aria-modal="true">
+        <a href="#" class="modal-backdrop" aria-hidden="true"></a>
+        <div class="modal-dialog" role="document">
+            <h2 id="modal-title">Welcome!</h2>
+            <p>Thanks for checking out this CSS-only modal.</p>
+            <div class="modal-actions">
+                <a class="btn btn--secondary" href="#">Close</a>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
+
+

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio | Sardorbek </title>
+    <linkhref="https://cdn.jsdelivr.net/npm/remixicon@4.7.0/fonts/remixicon.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="project.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <header class="animated">
+            <a href="#" class="logo">Portfolio</a>
+            <nav class="navbar">
+                <a href="../index.html">About</a>
+                <a href="./family.html">Family</a>
+                <a href="./project.html" class="active">Project</a>
+                <a href="./skills.html">Skills</a>
+                <a href="./contact.html">Contact</a>
+            </nav>
+        </header>
+
+        <section class="home animated">
+            <div class="projects-container">
+                <!-- Project 1 -->
+                <article class="project-card">
+                    <a href="../figma/index.html" class="project-image" data-project-link>
+                        <img src="../img/project1.jpg" alt="Project 1">
+                        <span class="click-animation"></span>
+                    </a>
+                    <div class="project-info">
+                        <h3 class="project-title">Coffee project</h3>
+                        <p class="project-description">This is coffee website.</p>
+                    </div>
+                </article>
+
+                <!-- Project 2 -->
+                <article class="project-card">
+                    <a href="../figma-2/index.html" class="project-image" data-project-link>
+                        <img src="../img/project2.jpg" alt="Project 2">
+                        <span class="click-animation"></span>
+                    </a>
+                    <div class="project-info">
+                        <h3 class="project-title">Master stroy</h3>
+                        <p class="project-description">This is master stroy website.</p>
+                    </div>
+                </article>
+
+                <!-- Project 3 -->
+                <article class="project-card">
+                    <a href="../figma-3/index.html" class="project-image" data-project-link>
+                        <img src="../img/project3.jpg" alt="Project 3">
+                        <span class="click-animation"></span>
+                    </a>
+                    <div class="project-info">
+                        <h3 class="project-title">About futball</h3>
+                        <p class="project-description">This project is about animation with photos.</p>
+                    </div>
+                </article>
+
+                <!-- Project 4 -->
+                <article class="project-card">
+                    <a href="../figma-4/index.html" class="project-image" data-project-link>
+                        <img src="../img/project4.jpg" alt="Project 4">
+                        <span class="click-animation"></span>
+                    </a>
+                    <div class="project-info">
+                        <h3 class="project-title">Dark Mode</h3>
+                        <p class="project-description">This is dark mode project, when you click to switch, the window would change to dark mode website.</p>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- <script>
+        (function() {
+            var links = document.querySelectorAll('[data-project-link]');
+            links.forEach(function(link) {
+                link.addEventListener('click', function(e) {
+                    if (e.ctrlKey || e.metaKey || e.shiftKey || e.altKey) return;
+                    e.preventDefault();
+                    var card = link.closest('.project-card');
+                    if (card) {
+                        card.classList.remove('animating');
+                        void card.offsetWidth;
+                        card.classList.add('animating');
+                    }
+                    var href = link.getAttribute('href');
+                    setTimeout(function() {
+                        window.open(href, '_blank', 'noopener');
+                    }, 400);
+                });
+            });
+        })();
+        </script> -->
+    </div>
+
+</body>
+
+</html>

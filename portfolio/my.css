@@ -15,7 +15,7 @@ html {
 }
 
 body {
-    height: 100%;
+    height: 100vh;
     background: url("../img/background-2.jpg") no-repeat center / cover;
     padding: 50px 5%;
 }
@@ -29,6 +29,7 @@ body {
     backdrop-filter: blur(30px);
     transform: scale(0);
     animation: zoom-in 1s ease forwards;
+    overflow: hidden;
 }
 
 @keyframes zoom-in {
@@ -97,6 +98,10 @@ header {
     color: #fff;
     animation-delay: 1.5s;
     overflow-y: scroll;
+}
+
+.home::-webkit-scrollbar {
+    display: none;
 }
 
 .animated-box {
